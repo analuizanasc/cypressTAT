@@ -1,0 +1,15 @@
+//eslint é um plugin para análise estática do código. Neste arquivo - dentro do diretório cypress, 
+//ele vai analisar de acordo com as regras recomendadas pelo cypress nos arquivos cy.
+//Para mais detalhes : https://www.youtube.com/live/3WEQ23HfzQU
+
+{
+    "extends": [
+      "plugin:cypress/recommended"
+    ],
+    //regras também foram definidas para a análise
+    "rules": {
+      "cypress/no-force": "error", // não pode force:true em um clique
+      "cypress/assertion-before-screenshot": "error", // não pode asserção antes de um screenchot
+      "cypress/no-pause": "error" // não pode teste pausado
+    }
+  }
