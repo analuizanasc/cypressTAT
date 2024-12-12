@@ -33,4 +33,14 @@ describe('Scenarios where authentication is a pre-condition', () => {
     cy.wait('@getNotes')
     cy.wait('@paymentRequest').its('state').should('be.equal', 'Complete')//its - acess a specific property (state)
   })
+
+  it('logs out', () =>{
+    cy.visit('/')
+    cy.wait('@getNotes')
+    if (Cypress.config('viewportWidth') < Cypress.env('viewportWidthBreakpoint')){
+      cy.get('.navbar-toggle.collapsed').should('be.visible').click()
+    }
+    cy.contains('.nav a', 'Logout').click()
+    cy.get('#email').should('be.visible')
+  })
 })
