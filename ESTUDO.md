@@ -4,4 +4,4 @@
 - Clear() ótimo para limpar um campo
 - Usar { log: false } faz com que dado não seja exibido no log. Exemplo de uso: cy.get('#password').type(password, { log: false })
 
-- Parei na parte:Aula 06 (Em LIMITAÇÕES) - 10/12 - Verificar por que usar .its()
+- Parei na parte:Aula 08 - Git actions - fazer passar
