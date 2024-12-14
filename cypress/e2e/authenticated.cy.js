@@ -36,8 +36,8 @@ describe('Scenarios where authentication is a pre-condition', () => {
 
   it('logs out',{ tags:'@desktop-and-tablet'}, () =>{
     cy.visit('/')
-    //cy.wait('@getNotes') // ocultando para teste de erro 
-    cy.wait(2000)
+    cy.wait('@getNotes')
+    //cy.wait(2000) // para simular erro
     /* if (Cypress.config('viewportWidth') < Cypress.env('viewportWidthBreakpoint')){
       cy.get('.navbar-toggle.collapsed').should('be.visible').click() 
     } */ // ocultando para teste de erro
