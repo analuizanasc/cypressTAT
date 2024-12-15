@@ -1,3 +1,6 @@
+/// <reference path="../support/commands.d.ts" />
+//  // busca como referencia o arquivo - tá definido a documentação dos comandos customizados
+
 import { faker } from '@faker-js/faker/locale/en'
 
 describe('Sign up', () => {

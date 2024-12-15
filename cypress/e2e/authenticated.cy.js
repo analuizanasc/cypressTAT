@@ -1,3 +1,6 @@
+/// <reference path="../support/commands.d.ts" />
+//  // busca como referencia o arquivo - tá definido a documentação dos comandos customizados
+
 // cypress/e2e/crud.cy.js
 
 import { faker } from '@faker-js/faker/locale/en'
@@ -34,10 +37,10 @@ describe('Scenarios where authentication is a pre-condition', () => {
     cy.wait('@paymentRequest').its('state').should('be.equal', 'Complete')//its - acess a specific property (state)
   })
 
-  it('logs out',{ tags:'@desktop-and-tablet'}, () =>{
+  it('logs out', { tags: '@desktop-and-tablet' }, () => {
     cy.visit('/')
     cy.wait('@getNotes')
-    if (Cypress.config('viewportWidth') < Cypress.env('viewportWidthBreakpoint')){
+    if (Cypress.config('viewportWidth') < Cypress.env('viewportWidthBreakpoint')) {
       cy.get('.navbar-toggle.collapsed').should('be.visible').click()
     }
     cy.contains('.nav a', 'Logout').click()

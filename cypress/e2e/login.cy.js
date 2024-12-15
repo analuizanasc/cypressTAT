@@ -1,3 +1,6 @@
+/// <reference path="../support/commands.d.ts" />
+//  // busca como referencia o arquivo - tá definido a documentação dos comandos customizados
+
 describe('Login', () => {
   it('successfully logs in', () => {
 
