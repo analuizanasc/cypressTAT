@@ -1,4 +1,4 @@
-#Aqui se encontra alguns apontamentos durante a prática e estudo do Cypress
+# Aqui se encontra alguns apontamentos durante a prática e estudo do Cypress
 
 - Eslint é uma ótima forma de realizar uma análise estática
 
